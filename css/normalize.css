@@ -73,6 +73,7 @@ body {
  */
 a {
   background: transparent;
+  text-decoration: none;
 }
 /**
  * Address `outline` inconsistency between Chrome and other browsers.

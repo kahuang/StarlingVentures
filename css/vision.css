@@ -96,6 +96,7 @@ p {
     text-indent: 0px;
     text-transform: none;
 }
+
 /*---------2. Buttons----------*/
 .button {
     display: inline-block;
@@ -486,6 +487,42 @@ p {
     text-align: center;
 }
 /*---------5. Columns----------*/
+.portlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+}
+.portrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.portcolumn {
+  padding-bottom: 50px;
+}
+
+.portcell-link {
+    padding: 0px 0px 0px 0px;
+    opacity: 1;
+    -webkit-transition: color 1000ms ease;
+    transition: color 1000ms ease;
+    font-family: Raleway, sans-serif;
+    color: #8E8E8E;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.portcell-link:hover {
+    opacity: 1;
+    -webkit-transition: color 1000ms ease;
+    transition: color 1000ms ease;
+    color: #4a4a4a;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
 .overall-column {
     padding: 40px 20px;
     text-align: center;
@@ -620,23 +657,49 @@ p {
     text-transform: none;
 }
 /*---------8. Text styles----------*/
-.nav-link {
-    padding: 5px 20px;
+.normal-link {
+    padding: 0px 0px 0px 0px;
     opacity: 1;
     -webkit-transition: color 500ms ease;
     transition: color 500ms ease;
     font-family: Raleway, sans-serif;
-    color: #4a4a4a;
+    color: #8E8E8E;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.nav-link:hover {
+.normal-link:hover {
     opacity: 1;
     -webkit-transition: none 0ms ease;
     transition: none 0ms ease;
+    color: #4a4a4a;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.nav-link {
+    padding: 0px 0px 0px 0px;
+    opacity: 1;
+    -webkit-transition: color 1000ms ease, border-bottom-color 1000ms ease;
+    transition: color 1000ms ease, border-bottom-color 1000ms ease;
+    font-family: Raleway, sans-serif;
     color: #8E8E8E;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    padding-bottom: 0px;
+    border-bottom-color: #d1dced;
+}
+.nav-link:hover {
+    opacity: 1;
+    -webkit-transition: color 1000ms ease, border-bottom-color 1000ms ease;
+    transition: color 1000ms ease, border-bottom-color 1000ms ease;
+    color: #4a4a4a;
+    border-bottom-color: #5aa6e8;
     letter-spacing: 1px;
     text-decoration: none;
 }
